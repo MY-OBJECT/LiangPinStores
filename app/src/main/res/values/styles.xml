@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/app_color</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="LpAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="NoTitle">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="LpAppTheme">
+
+    </style>
+
+
+    <!--导航栏风格-->
+    <style name="tab_menu_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10px</item>
+        <item name="android:drawablePadding">4px</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/main_indicate</item>
+    </style>
+    <!--中部导航栏格式-->
+    <style name="center_tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/main_indicate</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+
+    </style>
+    
+    <style name="tab_textSize" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16.5sp</item>
+    </style>
+    
+    <!--个人中心功能模式-->
+    <style name="item_Style" >
+        <item name="android:textColor">@color/center_textColor</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:paddingStart">22px</item>
+        <item name="android:paddingEnd">22px</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:layout_marginBottom">2.4dp</item>
+    </style>
+
+    <!--订单管理模型-->
+    <style name="DingDanGuanli">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/center_textColor</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--个人中心的字符串样式-->
+    <style name="Personal_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/center_textColor</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--设置中心Layout样式-->
+
+    <style name="Layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginBottom">4px</item>
+        <item name="android:paddingStart">20px</item>
+        <item name="android:paddingEnd">20px</item>
+    </style>
+
+    <!--添加dialog-->
+    <style name="dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TabLayoutTextSizeStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--个人中心的字符串样式-->
+    <style name="details_textStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">11.7sp</item>
+        <item name="android:textColor">@color/center_textColor</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

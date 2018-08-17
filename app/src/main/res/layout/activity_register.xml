@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back"
+    android:orientation="vertical"
+    tools:context="com.example.asus.liangpinstore.ui.activity.RegisterActivity">
+
+    <include layout="@layout/layout_tool_fragment"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:paddingStart="20px"
+        android:background="@color/white"
+        android:layout_height="88px">
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/register_phone"/>
+
+        <EditText
+            android:id="@+id/output_phone"
+            android:layout_toRightOf="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:maxLines="1"
+            android:cursorVisible="true"
+            android:numeric="integer"
+            android:layout_marginLeft="28px"
+            android:textColor="@color/center_textColor"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textSize="16.5sp"
+            android:hint="@string/output_phone"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:paddingStart="20px"
+        android:paddingEnd="20px"
+        android:layout_marginTop="4px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/phone_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/register_auth_code"/>
+
+        <EditText
+            android:id="@+id/output_btain_code"
+            android:layout_toRightOf="@+id/phone_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/output_phone_code"
+            android:background="@null"
+            android:numeric="integer"
+            android:layout_marginLeft="21px"
+            android:textSize="16.5sp"
+            android:cursorVisible="true"
+            android:textColor="@color/center_textColor"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            />
+        <TextView
+            android:id="@+id/huoqu_code"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="16.5sp"
+            android:layout_height="match_parent"
+            android:text="获取验证码"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:paddingStart="20px"
+        android:layout_marginTop="4px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/output_pwd_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pwd"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/output_pwd"
+            android:layout_toRightOf="@+id/output_pwd_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="21px"
+            android:hint="@string/output_pwd"
+            android:textSize="16.5sp"
+            android:password="true"
+            android:cursorVisible="true"
+            android:textColor="@color/center_textColor"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/edit_cursor_color"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:paddingStart="20px"
+        android:layout_marginTop="4px"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/output_pwd_ok_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pwd"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"/>
+
+        <EditText
+            android:id="@+id/output_pwd_ok"
+            android:layout_toRightOf="@+id/output_pwd_ok_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_marginLeft="21px"
+            android:hint="@string/output_ok_pwd"
+            android:textSize="16.5sp"
+            android:password="true"
+            android:cursorVisible="true"
+            android:textColor="@color/center_textColor"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/edit_cursor_color"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <Button
+        android:id="@+id/go_register"
+        android:layout_width="562px"
+        android:layout_height="84px"
+        android:background="@drawable/btn_background"
+        android:text="注册"
+        android:layout_marginTop="200px"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16.5sp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="400px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已有账号"
+            android:textSize="16.5sp" />
+
+        <TextView
+            android:id="@+id/go_login"
+            android:padding="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  去登陆"
+            android:textSize="16.5sp"
+            android:textColor="@color/blue"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_head"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+            android:id="@+id/myScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.zhy.autolayout.AutoLinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants">
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:focusable="true"
+                    >
+                    <ezy.ui.view.BannerView
+                        android:id="@+id/banner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        app:bvIndicatorColor="#fff"
+                        app:bvIndicatorColorSelected="@color/blue"
+                        />
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/linear_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignBottom="@id/banner1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:orientation="horizontal"
+                    android:paddingLeft="20px"
+                    android:paddingRight="20px"
+                    android:paddingTop="20px"
+                    android:paddingBottom="12px"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_weight="1"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/garden_stuff"/>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/riyongpin"/>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/muying"/>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/jiancai"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:paddingLeft="52px"
+                    android:paddingRight="52px"
+                    android:paddingTop="12px"
+                    android:paddingBottom="20px"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckedTextView
+                        android:id="@+id/checkbox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/center_tab_menu_item"
+                        android:text="综合"
+                        android:checked="true"
+                        android:textSize="16.5sp"
+                        android:drawableRight="@drawable/center_tab_selecter"/>
+
+                    <CheckedTextView
+                        android:id="@+id/checkbox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/center_tab_menu_item"
+                        android:layout_centerHorizontal="true"
+                        android:text="水果类"
+                        android:textSize="16.5sp"
+                        android:drawableRight="@drawable/center_tab_selecter"/>
+
+                    <CheckedTextView
+                        android:id="@+id/checkbox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/center_tab_menu_item"
+                        android:text="蔬菜类"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="16.5sp"
+                        android:drawableRight="@drawable/center_tab_selecter"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.framework.lplibs.view.ReGridView
+                    android:id="@+id/home_gridview"
+                    android:layout_margin="15px"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20px"
+                    android:horizontalSpacing="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="2">
+
+                </com.framework.lplibs.view.ReGridView>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>>
+    <include layout="@layout/layout_tool_edit_fragment"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

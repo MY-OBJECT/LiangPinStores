@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:padding="20px"
+        android:background="@color/white"
+        android:layout_marginTop="4px"
+        android:layout_width="match_parent"
+        android:layout_height="170px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:paddingLeft="22px"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每日优鲜"
+                android:textSize="30px"
+                android:textStyle="bold"
+                android:textColor="@color/center_textColor"
+                />
+            <ImageView
+                android:paddingTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京市海淀区苏州街"
+                android:textSize="26px"
+                android:paddingTop="10px"
+                android:textColor="@color/gray"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            >
+            <TextView
+                android:id="@+id/textTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多少人消费"
+                android:textSize="20px"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/gray"/>
+            <TextView
+                android:paddingTop="12px"
+                android:textSize="20px"
+                android:layout_below="@+id/textTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/gray"
+                android:text="距离：2km"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

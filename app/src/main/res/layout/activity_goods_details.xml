@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.liangpinstore.ui.activity.GoodsDetailsActivity">
+
+            <com.framework.lplibs.view.MyScrollview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/auto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/details_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="500px"
+                            android:background="@android:color/white"
+                            />
+
+                        <TextView
+                            android:id="@+id/index"
+                            android:layout_width="36.5dp"
+                            android:layout_height="17.6dp"
+                            android:background="@drawable/vp_index"
+                            android:gravity="center"
+                            android:layout_marginTop="440px"
+                            android:layout_marginEnd="28px"
+                            android:layout_marginBottom="0px"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/white"
+                            android:textSize="28px" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/auto2"
+                        android:layout_below="@+id/auto1"
+                        android:layout_width="match_parent"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_height="148px">
+
+                        <TextView
+                            android:id="@+id/commodity_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="水果名字"
+                            android:textStyle="bold"
+                            android:textColor="@color/center_textColor"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/commodity_price"
+                            android:layout_below="@+id/commodity_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="￥30/斤"
+                            android:textColor="@color/jin_color"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分享"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:drawablePadding="6px"
+                            android:drawableTop="@mipmap/details_share"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/center_textColor"/>
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_below="@+id/commodity_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="运费:5.00"
+                                android:textSize="11.7sp"
+                                android:textColor="@color/center_textColor"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="满1w包邮"
+                                android:textSize="11.7sp"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="@color/center_textColor"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="销量1212单"
+                                android:textColor="@color/center_textColor"
+                                android:textSize="11.7sp"
+                                android:layout_alignParentEnd="true"/>
+                        </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/auto3"
+                        android:layout_below="@+id/auto2"
+                        android:layout_marginTop="4px"
+                        android:background="@color/white"
+                        android:paddingStart="20px"
+                        android:paddingEnd="20px"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8px"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="80px">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="规格"
+                            android:textSize="16sp"
+                            android:textColor="@color/gray"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1KG/份"
+                            android:textColor="@color/center_textColor"
+                            android:textSize="16sp"
+                            android:layout_marginStart="20px"/>
+                        <View
+                            android:layout_width="4px"
+                            android:layout_marginStart="20px"
+                            android:layout_height="28px"
+                            android:background="@color/gray"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="果茎"
+                            android:layout_marginStart="20px"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24mm-26mm"
+                            android:textSize="16sp"
+                            android:textColor="@color/center_textColor"
+                            android:layout_marginStart="20px"/>
+
+                        <View
+                            android:layout_width="4px"
+                            android:layout_marginStart="20px"
+                            android:layout_height="28px"
+                            android:background="@color/gray"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产地"
+                            android:textColor="@color/gray"
+                            android:textSize="16sp"
+                            android:layout_marginStart="20px"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="河南"
+                            android:textColor="@color/center_textColor"
+                            android:textSize="16sp"
+                            android:layout_marginStart="20px"/>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/auto4"
+                        android:layout_below="@+id/auto3"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8px"
+                        android:layout_marginBottom="8px"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:layout_height="106px">
+                        <TextView
+                            style="@style/details_textStyle"
+                            android:text="首页"
+                            android:drawableTop="@mipmap/storehome_true"/>
+
+                        <TextView
+                            style="@style/details_textStyle"
+                            android:text="全部"
+                            android:drawableTop="@mipmap/storeall_true"/>
+                        <TextView
+                            style="@style/details_textStyle"
+                            android:text="新品"
+                            android:drawableTop="@mipmap/collect_true"/>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/auto5"
+                        android:layout_below="@+id/auto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="22px"
+                        android:background="@color/white">
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="评论"
+                            android:textSize="16sp"
+                            android:textColor="@color/center_textColor"/>
+
+                        <ListView
+                            android:id="@+id/listview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </ListView>
+
+                        <ImageView
+                            android:layout_below="@+id/text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/allpingjia"/>
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_below="@+id/auto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="72px"
+                        android:text="详情"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/center_textColor"/>
+
+                    <ListView
+                        android:layout_below="@+id/textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </ListView>
+                    <include layout="@layout/layout_tool_fragment" />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.framework.lplibs.view.MyScrollview>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shopping_cart"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_marginStart="40px"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/center_textColor"
+                android:layout_marginLeft="16px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="共计:00元"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/addcart_icon"
+                android:text="加入购物车"
+                android:textSize="17.5sp"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/pay_icon"
+                android:text="立即购买"
+                android:textSize="17.5sp"
+                android:textColor="@color/white"
+                />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

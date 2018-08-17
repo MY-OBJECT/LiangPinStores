@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/set_signature"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white"
+        android:hint="输入个性签名"
+        android:textSize="16.5sp"
+        android:textColor="@color/center_textColor"
+        android:maxLines="1"
+        android:paddingStart="20px"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

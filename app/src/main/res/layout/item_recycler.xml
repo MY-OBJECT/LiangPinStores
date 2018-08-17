@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home_good_img"
+            android:layout_width="332px"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_height="280px"
+            android:src="@mipmap/ic_launcher"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:paddingStart="18px"
+            android:paddingTop="15px"
+            android:paddingEnd="18px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/home_good_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/center_textColor"/>
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/fire"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="16px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="18px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star"/>
+            <ImageView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star"/>
+            <ImageView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star"/>
+            <ImageView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/star"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="horizontal"
+            android:paddingStart="18px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/home_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000.00"
+                android:textSize="16sp"
+                android:textColor="@color/jin_color"/>
+            <TextView
+                android:id="@+id/home_good_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

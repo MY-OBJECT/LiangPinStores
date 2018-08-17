@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.liangpinstore.ui.activity.AddAddressActivity">
+
+    <include layout="@layout/layout_tool_fragment"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+        <TextView
+            android:layout_width="132px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/consignee"
+            android:textColor="@color/center_textColor"
+            android:textSize="16.5sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4px"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:maxLines="1"
+            android:textSize="16.5sp"
+            android:hint="@string/consignee_name"
+            android:numeric="integer"
+            android:paddingStart="20px"
+            android:textColor="@color/center_textColor"
+            android:textCursorDrawable="@drawable/edit_cursor_color" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="4px">
+
+        <TextView
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/center_textColor"
+            android:textSize="16.5sp"
+            android:text="@string/contact_number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4px"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:maxLines="1"
+            android:textSize="16.5sp"
+            android:hint="@string/output_phone"
+            android:numeric="integer"
+            android:paddingStart="20px"
+            android:textColor="@color/center_textColor"
+            android:textCursorDrawable="@drawable/edit_cursor_color" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/auto_choose_city"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white"
+        android:layout_marginTop="4px">
+
+        <TextView
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:textSize="16.5sp"
+            android:gravity="center"
+            android:textColor="@color/center_textColor"
+            android:text="@string/location"/>
+
+        <TextView
+            android:id="@+id/address_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16.5sp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="30px"
+            android:layout_marginEnd="20px"
+            android:drawableRight="@mipmap/mine_go"
+            android:text="@string/choose_location"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:layout_marginTop="4px">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:padding="20px"
+            android:textSize="16.5sp"
+            android:hint="@string/write_address"
+            android:background="@color/white"
+            android:textCursorDrawable="@drawable/edit_cursor_color"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="4px"
+        android:layout_width="match_parent"
+        android:paddingStart="20px"
+        android:background="@color/white"
+        android:paddingEnd="20px"
+        android:layout_height="80px">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="16.5sp"
+            android:textColor="@color/center_textColor"
+            android:text="@string/default_address"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

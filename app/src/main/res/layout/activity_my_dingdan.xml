@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back"
+    tools:context="com.example.asus.liangpinstore.ui.activity.MyOrderFormActivity">
+
+    <include layout="@layout/layout_tool_fragment"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+        app:tabIndicatorColor="@color/blue"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextColor="@color/center_textColor">
+
+    </android.support.design.widget.TabLayout>
+
+    <com.example.asus.liangpinstore.view.CustomViewpager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8px"
+        />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

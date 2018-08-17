@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_back">
+    <include layout="@layout/layout_tool_fragment"></include>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:paddingRight="52px"
+        android:paddingLeft="52px"
+        android:paddingBottom="24px"
+        android:paddingTop="24px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/friends"
+            style="@style/DingDanGuanli"
+            android:text="好友"
+            android:drawablePadding="12px"
+            android:drawableTop="@mipmap/friends"/>
+        <TextView
+            android:text="邻居"
+            style="@style/DingDanGuanli"
+            android:drawablePadding="12px"
+            android:drawableTop="@mipmap/neighbor"/>
+        <TextView
+            android:text="朋友圈"
+            style="@style/DingDanGuanli"
+            android:drawablePadding="12px"
+            android:drawableTop="@mipmap/circle"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:drawableLeft="@mipmap/service"
+        android:text="前台预订"
+        android:textSize="16sp"
+        android:textColor="@color/center_textColor"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingTop="8px"
+        android:paddingBottom="8px"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4px"
+        android:drawablePadding="40px"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:drawableLeft="@mipmap/nei_circle"
+        android:text="邻居帮我"
+        android:textColor="@color/center_textColor"
+        android:textSize="16sp"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingTop="8px"
+        android:paddingBottom="8px"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4px"
+        android:drawablePadding="40px"
+        android:layout_marginBottom="32px"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="20px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</com.zhy.autolayout.AutoLinearLayout>

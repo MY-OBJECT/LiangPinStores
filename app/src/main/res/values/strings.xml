@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">邻居管家</string>
+
+    <string name="center_tab_zongHe">综合</string>
+    <string name="center_tab_shuiGuo">水果类</string>
+    <string name="center_tab_guoShu">蔬菜类</string>
+    <string name="tab_title1_store">推荐店铺</string>
+    <string name="tab_title2_store">全部店铺</string>
+
+    <string name="tab_order_all">全部</string>
+    <string name="tab_order_wait_pay">待付款</string>
+    <string name="tab_order_wait_fa">待发货</string>
+    <string name="tab_order_wait_shou">待收货</string>
+    <string name="tab_order_wait_ping">待评价</string>
+    <string name="tab_order_wait_service">退款/售后</string>
+    <string name="login_hin">请输入手机号</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="register_to">注册</string>
+    <string name="forget_pwd">忘记密码?</string>
+    <string name="output_phone">请输入手机号</string>
+    <string name="output_phone_code">请输入验证码</string>
+    <string name="output_pwd">请输入密码</string>
+    <string name="output_ok_pwd">确认密码</string>
+    <string name="consignee">收货人</string>
+    <string name="consignee_name">添加收货人姓名</string>
+    <string name="contact_number">联系电话</string>
+    <string name="location">所在地区</string>
+    <string name="choose_location">选择地区</string>
+    <string name="write_address">请填写详细地址</string>
+    <string name="default_address">设置为默认地址</string>
+</resources>

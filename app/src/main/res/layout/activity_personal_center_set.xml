@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.liangpinstore.ui.activity.PersonalCenterSetActivity">
+
+    <include layout="@layout/layout_tool_fragment"/>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_head_icon"
+        android:layout_width="match_parent"
+        android:layout_height="96.5dp"
+        android:background="@color/white"
+        android:layout_marginBottom="4px"
+        android:paddingStart="20px"
+        android:paddingEnd="20px"
+       >
+    <TextView
+        android:text="头像"
+        style="@style/Personal_text_style"
+        />
+        <com.example.asus.liangpinstore.view.RoundImageView
+            android:id="@+id/user_icon"
+            android:layout_marginEnd="32px"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/mine_default_icon"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/mine_go"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_user_name"
+        style="@style/Layout_style">
+        <TextView
+            style="@style/Personal_text_style"
+            android:text="名字"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40px"
+            android:textColor="@color/gray"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/mine_go"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_user_ID"
+        style="@style/Layout_style">
+        <TextView
+            style="@style/Personal_text_style"
+            android:text="账号"/>
+
+        <TextView
+            android:id="@+id/user_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/gray"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_user_sex"
+        style="@style/Layout_style">
+        <TextView
+            style="@style/Personal_text_style"
+            android:text="性别"/>
+
+        <TextView
+            android:id="@+id/user_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40px"
+            android:textColor="@color/gray"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/mine_go"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_user_signature"
+        style="@style/Layout_style">
+        <TextView
+            style="@style/Personal_text_style"
+            android:text="个性签名"/>
+
+        <TextView
+            android:id="@+id/user_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40px"
+            android:textColor="@color/gray"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/mine_go"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_user_tel"
+        style="@style/Layout_style"
+        android:layout_marginTop="10px">
+        <TextView
+            style="@style/Personal_text_style"
+            android:text="更换手机"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/mine_go"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_user_pwd"
+        style="@style/Layout_style">
+        <TextView
+            style="@style/Personal_text_style"
+            android:text="修改密码"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/mine_go"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="47dp">
+        <TextView
+            android:id="@+id/user_exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="@color/jin_color"
+            android:textSize="16.5sp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="4px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <EditText
+            android:id="@+id/old_phone"
+            android:layout_width="408px"
+            android:layout_height="match_parent"
+            android:hint="请输入手机号"
+            android:layout_marginEnd="4px"
+            android:background="@color/white"
+            android:paddingStart="20px"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:numeric="integer"
+            android:textColor="@color/center_textColor"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            />
+        <Button
+            android:id="@+id/obtain_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="发送验证码"
+            android:textSize="16.5sp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="4px"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:textSize="16.5sp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/center_textColor"
+            android:text="输入验证码"/>
+        <EditText
+            android:id="@+id/output_obtain_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textColor="@color/center_textColor"
+            android:maxLines="1"
+            android:paddingStart="20px"
+            android:layout_marginStart="4px"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:numeric="integer"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="4px"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+
+        <TextView
+            android:layout_width="234px"
+            android:layout_height="match_parent"
+            android:text="输入新的密码"
+            android:textSize="16.5sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/center_textColor"/>
+
+        <EditText
+            android:id="@+id/output_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/center_textColor"
+            android:background="@color/white"
+            android:layout_marginStart="4px"
+            android:maxLines="1"
+            android:paddingStart="20px"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/edit_cursor_color"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="4px"
+        android:layout_width="match_parent"
+        android:layout_height="80px">
+        <TextView
+            android:layout_width="234px"
+            android:layout_height="match_parent"
+            android:text="确认新的密码"
+            android:textSize="16.5sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/center_textColor"/>
+
+        <EditText
+            android:id="@+id/output_oknew_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/center_textColor"
+            android:cursorVisible="true"
+            android:paddingStart="20px"
+            android:layout_marginStart="4px"
+            android:background="@color/white"
+            android:textCursorDrawable="@drawable/edit_cursor_color"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

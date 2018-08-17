@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="height_status_bar">20dp</dimen>
+</resources>

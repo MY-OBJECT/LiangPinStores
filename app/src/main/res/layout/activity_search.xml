@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back"
+    tools:context="com.example.asus.liangpinstore.ui.activity.SearchActivity">
+
+    <include layout="@layout/toolbar_search"/>
+
+    <TextView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:text="热门搜索"
+        android:textSize="16sp"
+        android:paddingStart="20px"
+        android:gravity="center_vertical"
+        android:textColor="@color/center_textColor"/>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4px"
+        android:background="@color/white">
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></GridView>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>
